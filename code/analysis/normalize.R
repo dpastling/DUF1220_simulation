@@ -39,29 +39,9 @@ if (grepl("(mrsfast)|(total_trim)", data.folder))
 
 if (method == "total")
 {
-	# normalize align all strategy by the number of clade domains
-	# note this does not effect the percent off.target error rate
-#	outlier.genes <- c("NBPF13P", "NBPF17P", "NBPF3", "NBPF2P", "NBPF7", "NBPF21P")
-#	X <- filter(X, ! measured.gene %in% outlier.genes)
-#	mrsfast.groupings <- c(
-#		"NBPF(4|(5P)|6)_",
-#		"NBPF(3|(17P)|(2P))_",
-#		"NBPF13P",
-#		"NBPF12P"
-#	)
-#	X <- mutate(X, measured.group.id = "majority_")
-#	for (group in mrsfast.groupings)
-#	{
-#		X <- mutate(X, measured.group.id = ifelse(grepl(group, measured.domain), group, measured.group.id))
-#	}
-#	X <- mutate(X, measured.group.id = paste0(measured.group.id, measured.clade))
-#	X <- mutate(X, measured.group.id = measured.clade)
-#	X <- mutate(X, measured.group.id = gsub("HLS[123]", "HLS", measured.group.id))
 	X <- X %>%
 		group_by(file, measured.clade) %>%
-#		group_by(file, measured.group.id) %>%
 		mutate(read.depth = read.depth / n()) %>%
-#		mutate(read.depth = read.depth / sum(coverage)) %>%
 		ungroup()
 }
 
