@@ -22,7 +22,7 @@ Note: these simulations could be adapted for other segmental duplications and ge
 
 ## Dependencies
 
-See (plethora)[https://github.com/dpastling/plethora] for installing bedtools, samtools, and bowtie2.
+See [plethora](https://github.com/dpastling/plethora) for installing bedtools, samtools, and bowtie2.
 
 - bowtie2 version 2.2.9
 - bedtools version 2.17.0
@@ -30,10 +30,10 @@ See (plethora)[https://github.com/dpastling/plethora] for installing bedtools, s
 - Perl module: Math::Random
 - Perl module: Math::Complex
 
-If you are interesting in comparing the different alignment strategies described in the paper, you will also need to install mrsFastUltra and bowtie1.
+If you are interesting in comparing the different alignment strategies described in the paper, you will also need to install mrsFast-Ultra and Bowtie1.
 
-- (mrsFast-Ultra)[http://sfu-compbio.github.io/mrsfast/] version 3.3.11
-- (Bowtie1)[http://bowtie-bio.sourceforge.net/index.shtml] version 1.1.2
+- [mrsFast-Ultra](http://sfu-compbio.github.io/mrsfast/) version 3.3.11
+- [Bowtie1](http://bowtie-bio.sourceforge.net/index.shtml) version 1.1.2
 
 After installing mrsFastUltra and Bowtie1, you will need to build separate genome indicies for each. Follow the instructions included for each program for building these genome references.
 
