@@ -24,9 +24,9 @@ Note: these simulations could be adapted for other segmental duplications and ge
 
 See [plethora](https://github.com/dpastling/plethora) for installing bedtools, samtools, and bowtie2.
 
-- bowtie2 version 2.2.9
-- bedtools version 2.17.0
-- samtools version: 0.1.19-44428cd
+- [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) version 2.2.9
+- [Bedtools](http://bedtools.readthedocs.io/en/latest/) version 2.17.0
+- [Samtools](http://samtools.sourceforge.net) version: 0.1.19-44428cd
 - Perl module: Math::Random
 - Perl module: Math::Complex
 
