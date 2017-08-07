@@ -22,6 +22,7 @@ pdf(file = "plots/RMSE_by_read_length.pdf", width = 12, height = 6)
 p <- ggplot(X.sum, aes(read.length, RMSE, color = pairing)) + geom_point() + geom_line()
 p <- p + facet_grid(summarization ~ spiked.clade)
 p <- p + xlab("Read Length (in bp)")
+p <- p + theme_bw()
 print(p)
 dev.off()
 
