@@ -15,7 +15,7 @@ do
 	fastq_file=$result_folder/$fastq_file
 	trimmed_file=`echo $fastq_file | sed 's/100bp/trim/'`
 	gunzip -c $file > $fastq_file
-	~astlingd/code/utilities/randomlySampleFastq.pl -l 36 -o $trimmed_file $fastq_file
+	code/shortenReadLength.pl -l 36 -o $trimmed_file $fastq_file
 	gzip -f $trimmed_file
 	rm $fastq_file
 done
